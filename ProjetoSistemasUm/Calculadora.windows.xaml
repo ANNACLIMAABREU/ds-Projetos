@@ -1,0 +1,49 @@
+﻿<Window x:Class="ProjetoSistemasUm.Calculadora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetoSistemasUm"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Imagens/Calculo.jpg"/>
+        </Grid.Background>
+        <Button x:Name="btDivisao" Content="" HorizontalAlignment="Left" Margin="189,208,0,0" VerticalAlignment="Top" Width="68" Height="57" Click="btDivisao_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/divisionsign_81003 (1).png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btSubtract" Content="" HorizontalAlignment="Left" Margin="283,208,0,0" VerticalAlignment="Top" Width="68" Height="57" Click="btSubtract_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/minussign_87504.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btMult" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="57" Width="58" Margin="388,208,0,0" Click="btMult_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/math_times_icon_195340.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btAdd" Content="" HorizontalAlignment="Left" Margin="482,208,0,0" VerticalAlignment="Top" Width="58" Height="57" Click="btAdd_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/plus_icon-icons.com_70890.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btX" Content="" HorizontalAlignment="Left" Margin="567,146,0,0" VerticalAlignment="Top" Height="58" Width="64" Click="btX_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/language_c_icon_135457.png"/>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="txtN1" HorizontalAlignment="Left" Margin="189,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="27" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtN2" HorizontalAlignment="Left" Margin="433,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="27" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Margin="317,293,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Height="32" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Informe os números que deseja calcular :......" HorizontalAlignment="Left" Margin="141,71,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Calculos" HorizontalAlignment="Left" Margin="26,25,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="16" FontWeight="Bold" Foreground="White">
+            <Label.Background>
+                <ImageBrush/>
+            </Label.Background>
+        </Label>
+
+    </Grid>
+</Window>
